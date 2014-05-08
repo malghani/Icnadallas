@@ -1,0 +1,605 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ICNA | QUIZ </title>
+
+<link rel="stylesheet" type="text/css" href="styles/ma.tabsproduct.css" media="all" />
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css?v=1.1" media="screen" />
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-responsive.css?v=1.1" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="styles/styles_red.css?v=1.17" media="screen" />
+
+
+<script type="text/javascript" src="scripts/ma.jq.slide.js"></script>
+<script type="text/javascript" src="scripts/interaktingslider.min.js"></script>
+<style type="text/css">
+body { background-image: url(images/pattern2.png) ; background-repeat: repeat; }
+</style>
+
+
+    
+     <style type="text/css">
+        .style1
+        {
+            width: 120px;
+        }
+        .style2
+        {
+            width: 180px;
+            color:#004080; 
+            font-size: 14px; 
+            font-weight:400;
+            vertical-align:middle;
+        }
+        
+          .style2R
+        {
+            
+            color:#004080; 
+            font-size: 12px; 
+            font-weight:400;
+            vertical-align:middle;
+        }
+        
+        .style3
+        {
+            color:Black; 
+            font-size: 14px;
+            height: 55px;
+        }
+        
+        .style4
+        {
+            color:#333; 
+            font-size: 12px;
+            height: 35px;
+        }
+        
+   
+#mennn{
+	float:left;
+	width:422px;
+	border-right:solid 1px #000000;
+	//margin-right:10px;
+	//background:#6C6; 	
+}
+#mennn-bg:hover{
+	background:#Fff;	
+}
+#mennn3{
+	float:left;
+	width:286px;
+	border-right:solid 1px #000000;
+	//margin-right:10px;
+	//background:#6C6; 	
+}
+#mennn4{
+	float:left;
+	width:160px;
+	border-right:solid 1px #000000;
+	//margin-right:10px;
+	//background:#6C6; 	
+}
+
+#mennn4b{
+	float:left;
+	width:255px;
+	//border-right:solid 1px #000000;
+	margin-right:10px;
+	//background:#6C6; 	
+}
+
+#mennn5{
+	float:left;
+	width:285px;
+	//border-right:solid 1px #000000;
+	margin-right:10px;
+	//background:#6C6; 	
+}
+</style>  
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    
+    
+<div class="ma-wrapper">
+
+<!--Header information-->
+
+
+<div class="ma-page">
+ 
+<div class="ma-header-container">
+    <div class="container">
+        <div class="header">
+            
+           
+<div class="header-content">
+     <div class="row-fluid">
+     <div class="span3">
+     <h1 class="logo"><a href="#" title="TCS Connect" class="logo">
+    <!-- <img src="images/logo.png" alt="TCS Connect" style="width:120px; height:90px; margin-bottom:-20px; margin-top:4px; " />-->
+    </a></h1>
+     </div>
+     <div class="span9">
+
+
+<div id="topmenu1" runat="server">     
+     <div class="quick-access">
+           <ul class="links default">
+
+               	<li>       Welcome <%= Session("fullname")%>  |  
+           			<a href="logout.aspx" title="My Cart" class="top-link-cart">
+                    Logout
+                    </a>
+        		</li>
+           </ul>
+  
+      </div>                  
+
+
+</div>
+
+<div id="topmenu2" runat="server">
+<div class="quick-access">
+           <ul class="links default">
+
+               	<li>        
+           			<a href="register.aspx" title="My Cart" class="top-link-cart">Register</a> | <a href="login.aspx" title="My Cart" class="top-link-cart">Login</a>
+        		</li>
+           </ul>
+  
+
+</div>
+
+</div>
+
+                   
+</div></div></div></div></div></div></div>
+
+<!--Header close-->
+
+
+<!--Navigation--><div class="ma-nav-container visible-desktop">
+    <div class="container" style="padding-left:180px;">
+        <div id="pt_custommenu" class="pt_custommenu">
+        
+        
+        
+       
+<div id="mennn">
+	<div style="float:left; width:100%; vertical-align:middle; text-align:center; color:#000; padding-top:10px; padding-bottom:10px; padding-left:5px; padding-right:5px;">
+   	 <span style="color:#333; font-weight:bold; ">INFORMATION LINKS</span>
+    </div>
+    
+    <div id="mennn2" style="float:left; clear:both;">
+    <a href="default.aspx">
+         <div id="mennn-bg" style="float:left; padding-right:10px; border-right:solid 1px #666; padding-top:10px; 
+         padding-bottom:10px; padding-left:10px; width:120px; " >
+            <img src="images/home.png" style="width:50px; height:auto; margin-top:-10px; padding-right:10px; " />
+            <b>Home</b>
+         </div>
+    </a>    
+     <a href="#"> 
+         <div  id="mennn-bg" style="float:left; padding-right:10px; border-right:solid 1px #666; 
+         padding-top:10px; padding-bottom:10px; padding-left:10px; width:120px;  ">
+            <img src="images/about.png" style="width:40px; height:auto; padding-right:10px; "  />
+            <b>About</b>
+         </div>
+     </a>
+      <a href="profile.aspx#tab-bestseller3">    
+         <div  id="mennn-bg" style="float:left; padding-right:10px; padding-top:10px; padding-bottom:10px; padding-left:10px; width:120px;  ">
+            <img src="images/contact.png" style="width:40px; height:auto; padding-right:10px; "  />
+            <b>Contact</b>
+         </div>
+     </a>    
+    </div>
+    
+</div>  
+
+
+
+
+
+
+
+
+<div id="mennn3">
+	<div style="float:left; width:100%; text-align:center; color:#000; padding-top:10px; padding-bottom:10px; padding-left:5px; padding-right:5px;
+      ">
+   	 <span style="color:#333; font-weight:bold; ">LOGIN - REGISTRATION</span>
+    </div>
+    <div id="divinactive" runat="server">
+            <div id="mennn2" style="float:left; clear:both; ">
+            <a href="login.aspx">
+                 <div id="mennn-bg" style="float:left; padding-right:15px; border-right:solid 1px #666; padding-top:10px; 
+                 padding-bottom:10px; padding-left:10px; width:120px; " >
+                    <img src="images/Login_in-48.png" style="width:39px; height:auto; padding-right:10px;" />
+                    <b>Login</b>
+                 </div>
+            </a> 
+             <a href="register.aspx">    
+                 <div  id="mennn-bg" style="float:left; padding-right:10px; padding-top:10px; padding-bottom:10px; padding-left:10px; width:120px; ">
+                    <img src="images/Register-128.png" style="width:40px; height:auto; padding-right:10px; "  />
+                   <b>Register</b>
+                 </div>
+             </a>    
+            </div>
+
+    </div>
+
+
+    <div id="divactive" runat="server">
+            <div id="mennn2" style="float:left; clear:both; ">
+            <a href="logout.aspx">
+                 <div id="menu-bg" style="float:left; padding-right:15px; border-right:solid 1px #666; padding-top:10px; 
+                 padding-bottom:10px; padding-left:10px; width:120px; " >
+                    <img src="images/Login_in-48.png" style="width:39px; height:auto; padding-right:10px;" />
+                    <b>Logout</b>
+                 </div>
+            </a> 
+             <a href="profile.aspx">    
+                 <div  id="menu-bg" style="float:left; padding-right:10px; padding-top:10px; padding-bottom:10px; padding-left:10px; width:120px; ">
+                    <img src="images/Register-128.png" style="width:40px; height:auto; padding-right:10px; "  />
+                   <b>Profile</b>
+                 </div>
+             </a>    
+            </div>
+
+    </div>
+
+    
+</div>   
+
+
+
+
+     
+        
+        
+        
+ <!--
+ <div id="mennn4">
+	        <div style="float:left; width:92%; text-align:center; color:#000; padding-top:10px; padding-bottom:10px; padding-left:5px; padding-right:5px; ">
+   	         <span style="color:#333; font-weight:bold; ">YM QUIZ REGISTRATION</span>
+            </div>
+    
+            <div id="mennn2" style="float:left; clear:both; ">
+            <a href="ymquiz.aspx">
+                 <div id="mennn-bg" style="float:left; padding-right:24px; padding-top:10px; 
+                 padding-bottom:10px; padding-left:20px; width:116px; " >
+                    <img src="images/quiz.png" style="width:46px; height:auto; padding-right:10px; " />
+                    <b>YM Quiz</b>
+                 </div>
+            </a>     
+          </div>
+    
+
+</div>     
+--> 
+        
+
+
+         <div id="mennn4b">
+	        <div style="float:left; width:100%; text-align:center; color:#000; padding-top:10px; padding-bottom:10px; padding-left:0px; padding-right:5px; ">
+   	         <span style="color:#333; font-weight:bold; ">DONATION LINK</span>
+            </div>
+    
+            <div id="mennn2" style="float:left; clear:both; ">
+                <div id="donationactive" runat="server">
+                    <a href="payment/donate.aspx">
+                         <div id="mennn-bg" style="float:left; padding-right:14px; padding-top:10px; 
+                         padding-bottom:10px; padding-left:20px; width:226px; " >
+                            <img src="images/donate.png" style="width:155px; height:auto; padding-right:10px; " />
+                            <b>Donate</b>
+                         </div>
+                    </a>  
+                </div>   
+
+                 <div id="Donationinactive" runat="server">
+                    <a href="payment/donate.aspx?FName=Michael&LName=Jones&Email=michael@gmail.com&Address=Address1&City=NY&State=NY&Zip=33344&Phone=1112223333">
+                         <div id="mennn-bg" style="float:left; padding-right:14px; padding-top:10px; 
+                         padding-bottom:10px; padding-left:20px; width:226px; " >
+                            <img src="images/donate.png" style="width:155px; height:auto; padding-right:10px; " />
+                            <b>Donate</b>
+                         </div>
+                    </a>  
+                </div>   
+          </div>
+    
+
+</div> 
+
+
+
+
+  
+  <!--
+                          
+
+<div id="mennn5">
+	<div style="float:left; width:92%; text-align:center; color:#000; padding-top:10px; padding-bottom:10px; padding-left:5px; padding-right:5px; ">
+   	 <span style="color:#333; font-weight:bold; ">PAYMENT - DONATION</span>
+    </div>
+    
+    <div id="mennn2" style="float:left; clear:both; ">
+    <a href="#">
+         <div id="mennn-bg" style="float:left; padding-right:10px; border-right:solid 1px #666; padding-top:10px; 
+         padding-bottom:10px; padding-left:10px; width:120px; " >
+            <img src="images/payment.png" style="width:39px; height:auto; " />
+            <b>Payment</b>
+         </div>
+    </a>
+    <a href="#">     
+         <div  id="mennn-bg" style="float:left; padding-top:10px; padding-bottom:10px; padding-left:10px;  width:120px;  ">
+            <img src="images/Card-Payment-256.png" style="width:40px; height:auto; "  />
+            <b>Donation</b>
+         </div>
+    </a>     
+    </div>
+    
+</div> 
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>                            
+             
+            <div class="clearBoth"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+    var CUSTOMMENU_POPUP_WIDTH = 0;
+    var CUSTOMMENU_POPUP_TOP_OFFSET = 46;
+    var CUSTOMMENU_POPUP_RIGHT_OFFSET_MIN = 0;
+    var CUSTOMMENU_POPUP_EFFECT = 0;
+    //]]>
+
+    $jq(document).ready(function () {
+        $jq("#pt_menu_link ul li").each(function () {
+            //        alert("test");
+            var url = document.URL;
+            $jq("#pt_menu_link ul li a").removeClass("act");
+            $jq('#pt_menu_link ul li a[href="' + url + '"]').addClass('act');
+        });
+
+        $jq('.pt_menu').hover(function () {
+            var widthblock1 = $jq(this).find('.popup .block1').width();
+            var widthblock2 = $jq(this).find('.popup .block2').width();
+            var new_width_popup = 0;
+            if (widthblock1 && !widthblock2) {
+                new_width_popup = widthblock1;
+            }
+            if (!widthblock1 && widthblock2) {
+                new_width_popup = widthblock2;
+            }
+            if (widthblock1 && widthblock2) {
+                if (widthblock1 >= widthblock2) {
+                    new_width_popup = widthblock1;
+                }
+                if (widthblock1 < widthblock2) {
+                    new_width_popup = widthblock2;
+                }
+            }
+            new_width_popup = new_width_popup;
+            $jq(this).find('.popup').css('width', new_width_popup);
+            $jq(this).find('.popup .block1').css('width', new_width_popup);
+
+            if (CUSTOMMENU_POPUP_EFFECT == 0) $jq(this).find('.popup').stop(true, true).slideDown('slow');
+            if (CUSTOMMENU_POPUP_EFFECT == 1) $jq(this).find('.popup').stop(true, true).fadeIn('slow');
+            if (CUSTOMMENU_POPUP_EFFECT == 2) $jq(this).find('.popup').show('slow');
+        }, function () {
+            if (CUSTOMMENU_POPUP_EFFECT == 0) $jq(this).find('.popup').stop(true, true).slideUp('fast');
+            if (CUSTOMMENU_POPUP_EFFECT == 1) $jq(this).find('.popup').stop(true, true).fadeOut('fast');
+            if (CUSTOMMENU_POPUP_EFFECT == 2) $jq(this).find('.popup').hide('fast');
+        })
+        $jq('.pt_menu_no_child').hover(function () {
+            $jq(this).addClass("active");
+        }, function () {
+            $jq(this).removeClass("active");
+        })
+
+    });
+</script>
+
+
+
+
+
+<!--Navigation close-->
+
+
+
+
+<div class="ma-main-container col2-right-layout">
+     <div class="ma-main-content">
+     <div class="ma-main">
+     <div class="container">
+     <div class="main">
+     <div class="main-inner">
+
+  
+
+
+  
+    <!--Tabs code top-->
+    <div class="row-fluid">
+   <div class="col-main span9" style="width:100%;">
+
+	<div class="std"><div class="home-content"><div class="ma-tabsproduct-contain" style="background-color:#ffffff; ">
+
+    <!--Tabs code top ends-->
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+     
+     <!--Tabs code bottom starts -->
+
+     
+<script type="text/javascript">
+    jQuery("a.link-compare").attr("href", "")
+
+    //<![CDATA[
+    $jq(document).ready(function () {
+        $jq('.ma-tabs-content').children('div').hide();
+        $jq('.ma-tabs-content div:first').show();
+        $jq('.ma-tabs-title ul li:first').addClass('active');
+        $jq('.ma-tabs-title ul.tabs-title li a').click(function () {
+            $jq('.ma-tabs-title ul li').removeClass('active');
+            $jq(this).parent().addClass('active');
+            var currentTab = $jq(this).attr('href');
+            $jq('.ma-tabs-content').children('div').hide();
+            $jq(currentTab).show();
+            return false;
+        });
+    });
+    //]]>
+        </script>
+    </div>
+</div>
+</div></div></div>
+
+
+
+
+
+
+
+     <!-- Tabs code bottom ends -->
+
+
+
+
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <div class="footer">
+        
+<div class="ma-footer-static-container">
+    <div class="footer-static row-fluid">
+        <div class="container">
+            <div class="f-col f-col1 span3">
+<div class="footer-static-title">
+<h3>ICNA Address</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><span style="font-size: small;"><a title="Contact Us" href="#">     220 E. Spring Valley Rd.
+    
+</a></span></li>
+<li class="vendor-form"><span style="font-size: small;"><a title="FAQ's" href="#">Richardson, TX 75081</a></span></li>
+
+</ul>
+</div>
+</div>
+
+<div class="f-col f-col2 span3">
+<div class="footer-static-title">
+<h3>Contact Us</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<ul>
+<li><span style="font-size: small;"><a title="Return-Exchange-Policy" href="#">Phone: 972-669-9625</a></span></li>
+<li class="last"><span style="font-size: small;"><a title="Privacy Policy" href="#">Hours: Tuesday - Sunday<br />11:00 AM - 7:00 PM</a></span></li>
+
+</ul>
+</div>
+</div>
+<div class="f-col f-col3 span3">
+<div class="footer-static-title">
+<h3>About Us</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<ul>
+<li class="first"><span style="font-size: small;"><a title="home" href="default.aspx">Home</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small;"><a title="Home" href="#">Term of Use</a></span></li>
+<li><span style="font-size: small;"><a title="About " href="#">About Us</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small;"><a title="About Us" href="#">Feedback</a></span></li>
+<li class="last"><span style="font-size: small;"><a title="Mission" href="default.aspx">Our Mission</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small;"><a title="About Us" href="#">Privacy Policy</a></span></li>
+
+</ul>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="ma-footer-container">
+    <div class="border_center_footer"></div>
+    <div class="container">
+        <div class="footer">
+            <div class="row-fluid">
+                <div class="span12">
+                      
+<div class="row-fluid">
+<div class="span12"><address>  ICNA Dallas A Chapter Organization of ICNA USA, &copy; 2012-2014, <a href ="Default.aspx" >icnadallas.com</a></address></div>
+</div>
+	 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+    
+
+
+
+
+    </div>
+
+
+
+    </form>
+</body>
+</html>
